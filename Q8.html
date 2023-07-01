@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        div{
+            border: 3px solid blue;
+        }
+        div > p 
+        {
+            background-color:aqua;
+        }
+        div>section{
+            border: 3px solid skyblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Child Selector</h2>
+    
+    <p>The child selector (>) Here div is a parent specified with a border element inside it are all its childrens</p>
+    
+    <div title="Parent of p1,p2,p3,p4 & section">
+      <p title="First child of div">P1 inside the div.1st child</p>
+      <p title="Second child of div">P2 inside the div. 2nd Child</p>
+      <section title="Third child of div">
+        <!-- not Child but Descendant -->
+        <p title="Not a child of div (Child of section border-skyblue">P3 Inside Section which is inside div (Child of section element) but not a child element of div element can be selected through descendant'_' .</p>
+      </section>
+      <p title="Fourth child of div">P4 inside the div. 4th child(section with sky blue border is 3rd Child)</p>
+    </div>
+    
+    <p>P5.Adjacent Sibling of div.</p>
+    <p>P6.General Sibling of div.</p>
+    
+    </body>
+</html>
+

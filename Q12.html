@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adj-sibling</title>
+    <style>
+        div+p {
+            background-color:white; 
+            color: blue;
+            cursor: pointer;
+        }
+        h2+p{
+            background-color: orange;
+            cursor: pointer;
+        }
+        p+p{
+            background-color: green;
+            color:white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2 title="'NOT STYLED'--Not a Sibling of Adjacent Sibling of Any tag">My name is Donald</h2>
+        <p title="'STYLED'Adjacent Sibling of h2 tag">I live in Duckburg</p>
+    </div>
+    <p title="'STYLED'Adjacent Sibling of div tag">My best friend is Mickey.</p>
+    <p title="'STYLED'Adjacent Sibling of p tag">I will not be styled</p>
+</body>
+</html>

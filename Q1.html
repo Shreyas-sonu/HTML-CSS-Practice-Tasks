@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disabling_mousehover</title>
+    <style>
+        *{
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+        }
+        .btn1{
+            display:inline-block;
+            padding-left: auto;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(35, 121, 121, 0.909) !important;
+        }
+        .btn2{
+            display:inline-block;
+            float:right;
+            padding-left: auto;
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        .btn1:hover{
+            cursor: none;
+            background-color: blue;
+        }
+        .btn2:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Hover is being disabled for the below given button(left)</h1>
+    <div><button class="btn1">Disabled</button><button class="btn2">But it should act like this</button></div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background-blur</title>
+    <style>
+        body, html 
+          {
+            height: 95%;
+          }
+
+        * 
+         {
+            box-sizing: border-box;
+         }
+
+        .bg-image {
+            background-image: url("https://cdn.pixabay.com/photo/2018/04/28/22/03/tree-3358468__480.jpg");
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%;
+             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        .bg-text {
+            background-color: rgba(75, 70, 70, 0.171); 
+            color: white;
+            font-weight: bold;
+            border: 3px solid wheat;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 15px;
+            text-align: center;
+             }
+    </style>
+  </head>
+  <body>
+    <div class="bg-image"></div>
+        <div class="bg-text">
+          <section><img src="https://cdn.pixabay.com/photo/2017/06/07/10/47/elephant-2380009__480.jpg" alt="" height="250px" width="300px"></section>
+          <p>Background of this image is been blurred</p>
+    </div>
+  </body>
+</html>
